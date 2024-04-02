@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" href="css/forms.css" />
+  <link rel="stylesheet" type="text/css" href="css/grid.css">
+  <title>plan-neu-schritt2</title>
+</head>
+
+<body>
+  <div id="top_content__container">
+    <header>
+      <img class="logo" src="img/logo.png" alt="Aktuell ist kein Bild zu erzeugen">
+      <h1>plan-neu-schritt2</h1>
+    </header>
+    <%- include('navbereich') %>
+
+  </div>
+
+  <div id="main_content___container">
+    <main>
+      <h2></h2>
+      <form action="/neu" method="post">
+        <input type="hidden" name="studiengangId" value="<%= studiengangId %>">
+        <h2>Weitere Eingaben:</h2>
+        <fieldset>
+          <legend>BASISDATEN</legend>
+          <div>
+            <label class="fett" for="name" title="Dies ist ein erfoderliche Eingabe!">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name des Planes" required
+              pattern="[A-Za-z0-9-]{1,150}" />
+            <small></small>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>SEMESTER</legend>
+
+          <div>
+            <label for="semester" class="fett">Semester:</label>
+            <select id="semester" name="semester" required>
+              <option value="SS" selected>Sommersemester</option>
+              <option value="WiSe">Wintersemester</option>
+            </select>
+            <label class="fett" for="jahr" title="Jahr ist nur zwischen 1900-2099 erlaubt.">Jahr:</label>
+            <input type="number" id="jahr" name="jahr" min="1900" max="2099" value="2022" required /><small></small>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>KURSE</legend>
+          <%for(const key in kurse){%>
+            <label>
+              <input type="checkbox" name="kurse[]" value="<%=kurse[key].getid()%>" />
+              <%= kurse[key].name %>
+            </label>
+            <% } %>
+        </fieldset>
+
+        <button class="fett" type="submit" style="margin-left: 15px;">einreichen</button>
+
+      </form>
+    </main>
+    <%- include('aktMeldbereich') %>
+  </div>
+  <%- include('fußbereich') %>
+</body>
+
+</html>

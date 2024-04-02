@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="css/grid.css">
+  <link rel="stylesheet" href="css/forms.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="top_content__container">
+    <header>
+      <img class="logo" src="img/logo.png" alt="Aktuell ist kein Bild zu erzeugen">
+      <h1>plan-neu-schritt1</h1>
+    </header>
+    <%- include('navbereich') %>
+  </div>
+
+  <div id="main_content___container">
+    <main>
+      <form action="/waehleStudiengang" method="post">
+        <fieldset>
+          <h2>Auswahl eines Studienganges:</h2>
+          <p>
+            <select name="Studienganges">
+              <% let eindeutigeStudiengaenge=new Set(); studiengaenge.forEach(studiengang=> {
+                if (!eindeutigeStudiengaenge.has(studiengang.name)) {
+                eindeutigeStudiengaenge.add(studiengang.name);
+                %>
+                <option value="<%= studiengang.id %>">
+                  <%= studiengang.name %>
+                </option>
+                <% } }); %>
+            </select>
+          </p>
+          <button type="submit">weiter</button>
+        </fieldset>
+
+      </form>
+    </main>
+
+    <%- include('aktMeldbereich') %>
+  </div>
+  <%- include('fußbereich') %>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="./assets/CSS/styles.css" />
+  <link rel="stylesheet" href="./assets/CSS/forms.css" />
+  <link rel="stylesheet" href="./assets/CSS/grid.css" />
+  <title>plan-neu-schritt2</title>
+</head>
+
+<body>
+  <div id="top_content__container">
+    <header>
+      <img class="logo" src="assets/IMG/logo.png" alt="Aktuell ist kein Bild zu erzeugen" />
+      <h1>plan-neu-schritt2</h1>
+    </header>
+    <nav>
+      <a href="index.html">Liste der Semesterpläne</a>
+      <a href="plan.html">Details zum Semesterplan</a>
+      <a href="kurs.html">Details zum Kurs</a>
+      <a href="plan-neu-schritt1.html"> Plan erstellen</a>
+    </nav>
+  </div>
+
+  <div id="main_content___container">
+    <main>
+      <h2></h2>
+      <form action="https://labs.inf.fh-dortmund.de/planService/testCreatePlan.php" method="post">
+        <h2>Weitere Eingaben:</h2>
+        <fieldset>
+          <legend>BASISDATEN</legend>
+          <div>
+            <label class="fett" for="name" title="Dies ist ein erfoderliche Eingabe!">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name des Planes" required
+              pattern="[A-Za-z0-9-]{1,150}" />
+            <small></small>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>SEMESTER</legend>
+
+          <div>
+            <label for="semester" class="fett">Semester:</label>
+            <select id="semester" name="semester" required>
+              <option value="Sommersemester" selected>Sommersemester</option>
+              <option value="Wintersemester">Wintersemester</option>
+            </select>
+            <label class="fett" for="jahr" title="Jahr ist nur zwischen 1900-2099 erlaubt.">Jahr:</label>
+            <input type="number" id="jahr" name="jahr" min="1900" max="2099" value="2022" required /><small></small>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>KURSE</legend>
+          <label>
+            <input type="checkbox" name="kurse[]" value="rub" />
+            Rechnerstrukturen und Betriebssysteme 1
+          </label>
+          <label>
+            <input type="checkbox" name="kurse[]" value="eidp" />
+            Einführung in die Programmierung
+          </label>
+          <label>
+            <input type="checkbox" name="kurse[]" value="mathe1" />
+            Mathematik für Informatik 1
+          </label>
+          <label>
+            <input type="checkbox" name="kurse[]" value="ti" />
+            Theoretische Informatik
+          </label>
+          <label>
+            <input type="checkbox" name="kurse[]" value="bwl" />
+            BWL
+          </label>
+        </fieldset>
+
+        <button class="fett" type="submit" style="margin-left: 15px;">einreichen</button>
+
+      </form>
+    </main>
+
+    <aside>
+      <section>
+        <h3>Aktuelle Meldungen</h3>
+        <ul>
+          <li>
+            22.05.2025: Die Vorlesung zu "Web-Technologien" findet am
+            kommenden Mittwoch abweichend in der Westfalenhalle I statt.
+          </li>
+          <li>
+            16.04.2025: Die Veranstaltung "Lineare Algebra" muss in dieser
+            Woche leider krankheitsbedingt entfallen.
+          </li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+  <footer>Copyright &copy; 2023 by WebTech Inc.</footer>
+
+</body>
+
+</html>

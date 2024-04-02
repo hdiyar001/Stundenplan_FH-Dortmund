@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semesterplan: <%= plan.name %>
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+</head>
+
+<body>
+    <div id="top_content__container">
+        <header id="header">
+            <img class="logo" src="img/logo.png" alt="Aktuell ist kein Bild zu erzeugen">
+            <h1>Details zum Semesterplan</h1>
+        </header>
+        <%- include('navbereich') %>
+    </div>
+    <div id="main_content___container">
+        <main>
+            <section class="fett">
+                <h2>
+                    <%= plan.name %>
+                </h2>
+
+            </section>
+            <section>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Wochentag</th>
+                        <th>Stunden</th>
+                        <th>Typ</th>
+                    </tr>
+                    <% plan.kurse.forEach(kurs=> { %>
+
+                        <tr>
+                            <td>
+                                <a href="/kurs?id=<%= kurs.getid() %>&studiengangId=<%= kurs.studiengang %>">
+                                    <%= kurs.name %>
+                                </a>
+                            </td>
+                            <td>
+                                <%= kurs.termin.wochentag %>
+                            </td>
+                            <td>
+                                <%= kurs.termin.beginn %> - <%= kurs.termin.beginn + kurs.termin.dauer %>
+                            </td>
+                            <td>
+                                <%= kurs.typ %>
+                            </td>
+                        </tr>
+                        <% }); %>
+                </table>
+            </section>
+            <h3>V: Vorlesung | Ü: Übung | P: Praktikum</h3>
+        </main>
+        <%- include('aktMeldbereich') %>
+    </div>
+    <%- include('fußbereich') %>
+</body>
+
+</html>

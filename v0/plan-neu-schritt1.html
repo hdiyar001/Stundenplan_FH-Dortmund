@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/CSS/styles.css" />
+  <link rel="stylesheet" href="./assets/CSS/grid.css" />
+  <link rel="stylesheet" href="./assets/CSS/forms.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="top_content__container">
+    <header>
+      <img class="logo" src="assets/IMG/logo.png" alt="Aktuell ist kein Bild zu erzeugen" />
+      <h1>plan-neu-schritt1</h1>
+    </header>
+
+    <nav>
+      <a href="index.html"> Liste der Semesterpläne </a>
+      <a href="plan.html">Dtails zum Semesterplan </a>
+      <a href="kurs.html">Details zum Kurs </a>
+      <a href="#">Plan erstellen </a>
+    </nav>
+  </div>
+
+  <div id="main_content___container">
+    <main>
+      <form action="plan-neu-schritt2.html" method="get">
+        <fieldset>
+          <h2>Auswahl eines Studienganges:</h2>
+          <p>
+            <select name="Studienganges">
+              <option value="pi">Praktische Informatik</option>
+              <option value="ti">Technische Informatik</option>
+              <option value="ds">Data Science</option>
+              <option value="mi">Medizinische Informatik</option>
+              <option value="mi-dual">Medizinische Informatik dual</option>
+              <option value="swt-dual sst">SST dual (Softwaretechnik)</option>
+              <option value="swt-dual pi">
+                Informatik dual (Softwaretechnik)
+              </option>
+              <option value="sys-pi-dual">
+                Informatik dual (Netztechnik und Systemintegration)
+              </option>
+              <option value="wi">Wirtschaftsinformatik</option>
+            </select>
+          </p>
+          <button type="submit">weiter</button>
+        </fieldset>
+      </form>
+    </main>
+
+    <aside>
+      <section>
+        <h3>Aktuelle Meldungen</h3>
+        <ul>
+          <li>
+            22.05.2025: Die Vorlesung zu "Web-Technologien" findet am kommenden
+            Mittwoch abweichend in der Westfalenhalle 1 statt.
+          </li>
+          <li>
+            16.04.2025: Die Veranstaltung "Linear Algebra" muss in dieser Woche
+            leider krankheitsbedingt entfallen.
+          </li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+
+  <footer>Copyright &copy; 2023 by WebTech Inc.</footer>
+
+</body>
+
+</html>

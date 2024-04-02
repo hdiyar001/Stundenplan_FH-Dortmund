@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fehlerseite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .error-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            text-align: left;
+        }
+
+        h1 {
+            color: #ff6b6b;
+        }
+
+        .error-details {
+            background-color: #eee;
+            padding: 10px;
+            border-left: 5px solid #ff6b6b;
+            margin: 20px 0;
+            overflow-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="error-container">
+        <h1>Oops! Ein Fehler ist aufgetreten</h1>
+        <p>Wir entschuldigen uns für die Unannehmlichkeiten. Bitte versuchen Sie es später noch einmal oder kontaktieren
+            Sie den Support, wenn das Problem weiterhin besteht.</p>
+        <div class="error-details">
+            <strong>Fehlermeldung:</strong>
+            <%= fehler.message %>, fehlerstatus <%= statusCode %>
+        </div>
+        <% if (fehler.stack) { %>
+            <div class="error-details">
+                <strong>Technische Details:</strong>
+                <pre><%= fehler.stack %></pre>
+            </div>
+            <% } %>
+    </div>
+</body>
+
+</html>

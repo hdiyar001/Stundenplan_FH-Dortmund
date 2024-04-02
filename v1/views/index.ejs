@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pläner</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" href="css/flexbox.css" />
+  <!-- <script src="../public/js/script.js"> </script> -->
+</head>
+
+<body>
+  <div id="top_content__container">
+    <header>
+      <img class="logo" src="img/logo.png" alt="Aktuell ist kein Bild zu erzeugen">
+      <h1>Semesterpläne</h1>
+    </header>
+    <%- include('navbereich') %>
+
+  </div>
+
+  <div id="main_content___container">
+    <main>
+      <h2>Meine Semesterpläne</h2>
+
+      <form action="http://localhost:8123/index">
+        <label for="groupby">Pläne gruppieren nach:
+          <select name="gruppierung" id="gruppierung">
+            <option value="semesterplan" selected>Semester</option>
+            <option value="studiengang">Studiengang</option>
+          </select>
+        </label>
+        <input type="submit" />
+      </form>
+      <section>
+        <% for (let gruppe in liste) { %>
+          <h3>
+            <%= gruppe %>
+          </h3>
+          <ul>
+            <% for (let plan of liste[gruppe]) { %>
+              <li>
+                <a href="plan?id=<%=plan.id%>">
+                  <%= plan.name %> (<%= plan.getAnzahlKurse() %> Kurse, <%= plan.getAnzahlStunden()%>
+                        Stunden)
+                </a>
+                <ul>
+                  <% plan.kurse.forEach(kurs=> { %>
+                    <li>
+                      <%= kurs.name %>
+                    </li>
+                    <% }); %>
+                </ul>
+              </li>
+              <% } %>
+          </ul>
+          <% } %>
+      </section>
+
+
+    </main>
+    <%- include('aktMeldbereich') %>
+  </div>
+  <%- include('fußbereich') %>
+
+</body>
+
+</html>

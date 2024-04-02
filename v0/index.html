@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pläner</title>
+  <link rel="stylesheet" type="text/css" href="assets/CSS/styles.css" />
+  <link rel="stylesheet" href="./assets/CSS/flexbox.css" />
+</head>
+
+<body>
+  <div id="top_content__container">
+    <header>
+      <img class="logo" src="assets/IMG/logo.png" alt="Aktuell ist kein Bild zu erzeugen">
+      <h1>Semesterpläne</h1>
+    </header>
+    <nav>
+      <a href="index.html"> Liste der Semesterpläne </a>
+      <a href="plan.html">Dtails zum Semesterplan </a>
+      <a href="kurs.html">Details zum Kurs </a>
+      <a href="plan-neu-schritt1.html"> Plan erstellen</a>
+    </nav>
+  </div>
+
+  <div id="main_content___container">
+    <main>
+      <h2>Meine Semesterpläne</h2>
+      <label for="groupby">Pläne gruppieren nach:
+        <select name="groupbySemStud" id="groupby">
+          <option value="semester" selected>Semester</option>
+          <option value="studiengang">Studiengang</option>
+        </select>
+      </label>
+
+      <div id="semester"></div>
+      <div id="studiengang" style="display: none;"></div>
+
+      <script src="./assets/js/script.js"> </script>
+      <script src="./assets/js/index.js"> </script>
+    </main>
+    <aside>
+      <section>
+        <h3>Aktuelle Meldungen</h3>
+        <ul>
+          <li>
+            22.05.2025: Die Vorlesung zu "Web-Technologien" findet am
+            kommenden Mittwoch abweichend in der Westfalenhalle 1 statt.
+          </li>
+          <li>
+            16.04.2025: Die Veranstaltung "Linear Algebra" muss in dieser
+            Woche leider krankheitsbedingt entfallen.
+          </li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+  <footer>Copyright &copy; 2023 by WebTech Inc.</footer>
+</body>
+
+</html>
+
+<!--
+        <section title="Semester1">
+        <h3>WiSe 22/23 (Semester1)</h3>
+        <ul>
+          <li><a href="plan.html">PI-Plan (5 Kurse, 7.5 Stunden)</a></li>
+          <ul>
+            <li>Rechnerstrukturen und Betriebssysteme 1</li>
+            <li>Einführung in die Programmierung</li>
+            <li>Mathematik für Informatik 1</li>
+            <li>Theoretische Informatik</li>
+            <li>BWL</li>
+          </ul>
+        </ul>
+      </section>
+      <section title="Semester2">
+
+         <h3>SoSe 23 (Semester2)</h3>
+        <ul>
+          <li><a href="plan.html">PI-Plan (7 Kurse, 10.5 Stunden)</a></li>
+          <ul>
+            <li>Rechnerstrukturen und Betriebssysteme 2</li>
+            <li>Algorithmen und Datenstruckturen</li>
+            <li>Mathematik für Informatik 2</li>
+            <li>Mathematik für Informatik 3</li>
+            <li>Lern-und Arbeitstechniken</li>
+            <li>Programmierkurs 1</li>
+            <li>Englisch</li>
+          </ul>
+        </ul>
+      </section>
+
+      <section title="Semester3">
+        <h3>WiSe 23/24 (Semester3)</h3>
+        <ul>
+          <li><a href="plan.html">PI-Plan (6 Kurse, 9 Stunden)</a></li>
+          <ul>
+            <li>Mensch Computer Interaktion</li>
+            <li>Mathematik für Informatik 4</li>
+            <li>Programmierkurs 2</li>
+            <li>Web-Technologien</li>
+            <li>Softwaretechnik 1</li>
+            <li>Datenbanken 1</li>
+          </ul>
+        </ul>
+      </section>-->

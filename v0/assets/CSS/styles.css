@@ -1,0 +1,164 @@
+body {
+  font-family: Helvetica, Arial, Georgia;
+  height: 10000px;
+}
+
+h1 {
+  margin: 0px 5px;
+  font-size: xx-large;
+  color: darkorange
+}
+
+.fett {
+  font-weight: bold;
+}
+
+h2,
+h3 {
+  color: orange;
+  margin-left: 5px;
+}
+
+
+aside {
+  background: bisque;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid gray;
+}
+
+aside h3 {
+  color: tomato;
+}
+
+
+nav {
+  background-color: silver;
+  border-radius: 2px;
+  margin: 5px;
+  padding: 5px;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: rgb(228, 122, 51);
+  color: #ffffff;
+  border-radius: 2px;
+  padding: 5px 8px;
+  margin-right: 5px;
+  margin-top: 3px;
+}
+
+nav a:hover {
+  font-size: large;
+  background-color: rgb(233, 163, 116);
+}
+
+nav a:active {
+  background-color: rgb(227, 178, 146);
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+#top_content__container {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000px;
+}
+
+
+#main_content___container {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+header {
+  margin-left: 10px;
+  align-items: center;
+  border-radius: 10px;
+}
+
+/* Regeln für Tabellen */
+table {
+  border-collapse: collapse;
+  margin-left: 5px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+table th {
+  background-color: rgb(81, 118, 250);
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/*Logische Verteilung*/
+main {
+  border: 2px solid black;
+  margin-top: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: x-large;
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+/* @media (min-height: 950px) { */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* } */
+
+@media screen and (min-width: 481px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: large;
+  }
+
+  nav a {
+    display: block;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .logo {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+footer {
+  justify-content: center;
+}

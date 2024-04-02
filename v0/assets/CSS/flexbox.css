@@ -1,0 +1,38 @@
+#main_content___container,
+#top_content__container,
+header,
+footer {
+  display: flex;
+}
+
+
+
+main {
+  flex: 1 1 70%;
+}
+
+aside {
+  flex: 1 1 10%;
+}
+
+@media screen and (min-width: 1025px) {
+  #top_content__container {
+    align-items: center;
+  }
+
+  nav {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #top_content__container {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #main_content___container {
+    display: block;
+  }
+}
