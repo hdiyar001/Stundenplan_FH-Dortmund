@@ -4,22 +4,6 @@ Entwickelt für Studienzwecke, nutzt diese Webseite moderne Webtechnologien wie 
 
 ## Screenshots
 
-### Details zu Kursen
-![Details zu Kursen](images/DetailsZuKurs.png)
-Hier wird die Detailansicht eines Kurses gezeigt, inklusive Informationen zum Zeitplan, Dozenten und Raumnummer.
-
-### Details zum Semesterplan
-![Details zum Semesterplan](images/DetailsZuSemPlan.png)
-Diese Ansicht zeigt die Details eines ausgewählten Semesterplans, einschließlich aller Kurse und geplanten Zeiten.
-
-### Fehlerseite
-![Fehlerseite](images/FehlerSeite.png)
-Ein Beispiel für eine Fehlerseite, die Nutzer sehen, wenn ein Problem auftritt.
-
-### Liste der Semesterpläne
-![Liste der Semesterpläne](images/ListeDerSemPläne.png)
-Übersicht aller verfügbaren Semesterpläne zur Auswahl.
-
 ### Plan erstellen
 ![Plan erstellen](images/PlanErstellen.png)
 Auf dieser Seite können Benutzer einen neuen Stundenplan erstellen.
@@ -27,6 +11,23 @@ Auf dieser Seite können Benutzer einen neuen Stundenplan erstellen.
 ### Plan erstellen Schritt 2
 ![Plan erstellen Schritt 2](images/PlanErstellenS2.png)
 Eine Fortsetzung des Prozesses zum Erstellen eines Stundenplans mit zusätzlichen Optionen.
+
+### Liste der Semesterpläne
+![Liste der Semesterpläne](images/ListeDerSemPläne.png)
+Übersicht aller verfügbaren Semesterpläne zur Auswahl.
+
+### Details zum Semesterplan
+![Details zum Semesterplan](images/DetailsZuSemPlan.png)
+Diese Ansicht zeigt die Details eines ausgewählten Semesterplans, einschließlich aller Kurse und geplanten Zeiten.
+
+### Details zu Kursen
+![Details zu Kursen](images/DetailsZuKurs.png)
+Hier wird die Detailansicht eines Kurses gezeigt, inklusive Informationen zum Zeitplan, Dozenten und Raumnummer.
+
+### Fehlerseite
+![Fehlerseite](images/FehlerSeite.png)
+Ein Beispiel für eine Fehlerseite, die Nutzer sehen, wenn ein Problem auftritt.
+
 
 ### Responsive Design
 ![Responsive Design 1](images/Responsive1.png)
