@@ -32,6 +32,7 @@ Ein Beispiel für eine Fehlerseite, die Nutzer sehen, wenn ein Problem auftritt.
 ### Responsive Design
 ![Responsive Design 1](images/Responsive1.png)
 ![Responsive Design 2](images/Responsive2.png)
+
 Beispiele für das responsive Design der Anwendung, die sicherstellen, dass die Seite auf verschiedenen Geräten gut aussieht und funktioniert.
 
 ## Wie man das Projekt startet
