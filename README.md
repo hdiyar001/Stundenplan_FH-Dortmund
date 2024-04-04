@@ -1,22 +1,45 @@
-Stundenplan für FH Dortmund
-Dieses Webprojekt wurde mit dem Ziel entwickelt, Studierenden der FH Dortmund das Erstellen und Verwalten ihres Stundenplans zu vereinfachen. Unter Verwendung modernster Webtechnologien wie Node.js, HTML, CSS, JavaScript und Express.js, sowie Template-Engines wie EJS, bietet diese Anwendung eine interaktive und benutzerfreundliche Plattform. Die intuitive Benutzeroberfläche und die elegante Integration verschiedener Funktionen erleichtern es den Studierenden, ihren akademischen Alltag effizient und effektiv zu organisieren.
+# Stundenplan für FH Dortmund
 
-Projektstruktur
-Im Verzeichnis images befinden sich Screenshots, die verschiedene Aspekte der Anwendung veranschaulichen:
+Entwickelt für Studienzwecke, nutzt diese Webseite moderne Webtechnologien wie Node.js, HTML, CSS, JavaScript, Express.js, sowie Template-Engines wie EJS. Sie ermöglicht Studierenden der FH Dortmund, ihren Stundenplan interaktiv und benutzerfreundlich zu gestalten. Durch die Verwendung dieser Technologien bietet die Anwendung eine nahtlose Integration von Funktionalität und Design, um den akademischen Alltag effizient zu organisieren.
 
-DetailsZuKurs.png - Zeigt die Detailansicht eines Kurses, mit Informationen wie Zeitplan, Dozenten und Raumnummer.
-DetailsZuSemPlan.png - Präsentiert die Detailansicht eines ausgewählten Semesterplans mit einer Liste der Kurse und Zeitblöcke.
-FehlerSeite.png - Ein Screenshot der Fehlerseite, die erscheint, wenn ein Nutzer auf ein Problem stößt.
-ListeDerSemPläne.png - Die Ansicht aller verfügbaren Semesterpläne, aus der ein Studierender wählen kann.
-PlanErstellen.png - Die Seite, auf der Benutzer einen neuen Stundenplan erstellen können.
-PlanErstellenS2.png - Folgt PlanErstellen.png und zeigt weitere Schritte zur Erstellung eines Stundenplans.
-Responsive1.png und Responsive2.png - Diese Bilder zeigen die Responsive-Design-Fähigkeit der Anwendung, sodass sie auf verschiedenen Geräten funktioniert.
-Installation und Start
-Um das Projekt lokal zu starten, folge diesen Schritten:
+## Screenshots
 
-Klone das Repository auf deinen lokalen Computer.
-Installiere die notwendigen Abhängigkeiten über npm install.
-Starte den Server mit npm start.
-Öffne deinen Browser und navigiere zu localhost:3000, um die Anwendung zu verwenden.
-Stelle sicher, dass Node.js auf deinem System installiert ist, bevor du versuchst, das Projekt zu starten.
+### Details zu Kursen
+![Details zu Kursen](images/DetailsZuKurs.png)
+Hier wird die Detailansicht eines Kurses gezeigt, inklusive Informationen zum Zeitplan, Dozenten und Raumnummer.
 
+### Details zum Semesterplan
+![Details zum Semesterplan](images/DetailsZuSemPlan.png)
+Diese Ansicht zeigt die Details eines ausgewählten Semesterplans, einschließlich aller Kurse und geplanten Zeiten.
+
+### Fehlerseite
+![Fehlerseite](images/FehlerSeite.png)
+Ein Beispiel für eine Fehlerseite, die Nutzer sehen, wenn ein Problem auftritt.
+
+### Liste der Semesterpläne
+![Liste der Semesterpläne](images/ListeDerSemPläne.png)
+Übersicht aller verfügbaren Semesterpläne zur Auswahl.
+
+### Plan erstellen
+![Plan erstellen](images/PlanErstellen.png)
+Auf dieser Seite können Benutzer einen neuen Stundenplan erstellen.
+
+### Plan erstellen Schritt 2
+![Plan erstellen Schritt 2](images/PlanErstellenS2.png)
+Eine Fortsetzung des Prozesses zum Erstellen eines Stundenplans mit zusätzlichen Optionen.
+
+### Responsive Design
+![Responsive Design 1](images/Responsive1.png)
+![Responsive Design 2](images/Responsive2.png)
+Beispiele für das responsive Design der Anwendung, die sicherstellen, dass die Seite auf verschiedenen Geräten gut aussieht und funktioniert.
+
+## Wie man das Projekt startet
+
+Um das Projekt zu starten, müssen folgende Schritte durchgeführt werden:
+
+1. Klone das Repository.
+2. Installiere alle Abhängigkeiten mit `npm install`.
+3. Starte den Server mit `npm start`.
+4. Öffne `localhost:3000` im Browser.
+
+Stelle sicher, dass Node.js und npm auf deinem Computer installiert sind, bevor du diese Schritte ausführst.
